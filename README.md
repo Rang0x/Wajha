@@ -185,6 +185,11 @@ npm run dev              # http://localhost:1420
 together: the canvas rendering engine, the data model, storage, export and the
 interface. Contributions are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
+[PROJECT.md](PROJECT.md) covers the goals and non-goals, and
+[ROADMAP.md](ROADMAP.md) what comes next. See also
+[docs/SCALING.md](docs/SCALING.md), [docs/RELEASING.md](docs/RELEASING.md),
+[SECURITY.md](SECURITY.md) and [CHANGELOG.md](CHANGELOG.md).
+
 ## Built with
 
 [Tauri](https://tauri.app), [React](https://react.dev),

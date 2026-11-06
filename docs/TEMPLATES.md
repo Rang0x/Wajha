@@ -193,16 +193,16 @@ Each slide has `layouts.tall` (required), and optionally `layouts.tablet` and
 | Class | Reference canvas | Used by |
 |---|---|---|
 | `tall` | iPhone 1320 × 2868 | iPhone, Android phone |
-| `tablet` | iPad 2064 × 2752 | iPad, Android tablet |
-| `wide` | Mac 2880 × 1800 | Mac, Google Play feature graphic |
+| `tablet` | iPad 2064 × 2752 | iPad, Android tablet, Apple Watch |
+| `wide` | Mac 2880 × 1800 | Mac, landscape phones and tablets, Apple TV, Vision Pro, Google Play feature graphic |
 
 A family whose class layout is missing gets the tall layout **adapted**:
 copy and devices are re-flowed (side by side on wide canvases), shapes keep
 their relative position and size. Adaptation is good, but large decorations
 can end up behind the copy; designing `tablet` and `wide` yourself always
 gives the best result. Device frames that are a family default (`iphone`,
-`ipad`, `android-phone`, `android-tablet`, `macbook`) are swapped for the
-target family's own frame; `browser` and `none` are kept.
+`ipad`, `android-phone`, `android-tablet`, `macbook`, `watch`, `tv`, `vision`)
+are swapped for the target family's own frame; `browser` and `none` are kept.
 
 ### Theme
 
@@ -264,7 +264,7 @@ Every element has `id` (unique in its layout), `kind`, `x`, `y`,
 
 | Field | Meaning |
 |---|---|
-| `frame` | `iphone`, `ipad`, `android-phone`, `android-tablet`, `macbook`, `browser` (a window with a toolbar, for web apps), `none` (the bare screenshot with rounded corners) |
+| `frame` | `iphone`, `ipad`, `android-phone`, `android-tablet`, `macbook`, `watch`, `tv`, `vision`, `browser` (a window with a toolbar, for web apps), `none` (the bare screenshot with rounded corners) |
 | `style` | `color` of the body; `finish`: `metal` (sheen and edge highlight), `matte`, `clay` (solid pastel); `bezel`: `black` or `match` (body coloured, the clay mockup look) |
 | `width` | Outer width in u; the height follows the screen shape |
 | `slot` | Which screenshot it shows: `"main"`, or another key such as `"second"` for a second device on the same slide |

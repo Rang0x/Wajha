@@ -223,8 +223,9 @@ visible element in output pixels.
   sharp at any size. Frames: `iphone` (Dynamic Island, thin uniform bezel,
   rounded corners, side buttons), `ipad` (uniform bezel, front camera),
   `android-phone` (punch-hole camera, slim bezel), `android-tablet`,
-  `macbook` (screen with notch + aluminium base), `browser` (window chrome
-  with traffic lights and URL bar), `none` (screenshot with rounded corners).
+  `macbook` (screen with notch + aluminium base), `watch`, `tv`, `vision`,
+  `browser` (window chrome with traffic lights and URL bar), `none`
+  (screenshot with rounded corners).
   Finishes: `metal` (subtle gradient sheen + edge highlight), `matte`,
   `clay` (solid pastel body, `bezel: 'match'`). The screen aspect comes from
   the screenshot (`getAssetAspect`) or the family default; the screenshot is
