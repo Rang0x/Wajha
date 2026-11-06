@@ -26,6 +26,11 @@ own copy, and the usual tools are paid, online-only or both. **Wajha**
 template, drop in your screenshots, write your headlines, and export every
 size both stores ask for, in every language, in one click.
 
+> [!NOTE]
+> This is an independent version of Wajha maintained by
+> [Rang0x](https://github.com/Rang0x), forked from
+> [M-Alkassem/Wajha](https://github.com/M-Alkassem/Wajha), the original project.
+
 ## Features
 
 - **20 designed templates** in seven styles, from minimal to bold panoramas,
@@ -72,6 +77,11 @@ size both stores ask for, in every language, in one click.
 </table>
 
 ## Download
+
+> [!NOTE]
+> This version has not published its own builds yet. Until it does,
+> [build from source](#build-from-source) or use the
+> [original project's releases](https://github.com/M-Alkassem/Wajha/releases).
 
 Get the installer for your system from the
 [Releases](../../releases/latest) page:
@@ -156,7 +166,7 @@ You need [Node.js](https://nodejs.org) 22.18 or later, the
 system.
 
 ```bash
-git clone https://github.com/M-Alkassem/Wajha.git
+git clone https://github.com/Rang0x/Wajha.git
 cd Wajha
 npm install
 npm run desktop          # run the desktop app in development mode

@@ -15,8 +15,12 @@ released version may run indefinitely, and it fetches this repository's `main`
 branch:
 
 ```
-https://cdn.jsdelivr.net/gh/M-Alkassem/Wajha@main/gallery/
+https://cdn.jsdelivr.net/gh/Rang0x/Wajha@main/gallery/
 ```
+
+This fork has shipped no builds yet, so no installed copy depends on that URL.
+**Before the first release is the cheapest time to change it**, for example to a
+versioned path, because nothing has to stay compatible yet.
 
 So these are public APIs, even though they look like internal files:
 
@@ -136,6 +140,6 @@ Docs and tests are strong for a project this young. The gaps are around people.
   such as `current === 'ar'`. Before adding a third language, make the catalog
   generic, pick the RTL flag from language data, and let `i18n.test.ts` report
   coverage without failing on partial languages.
-- **Hard-coded repository:** `REPO_OWNER` in `src/config.ts` means a fork's builds
-  still read the upstream gallery unless `VITE_GALLERY_URL` is set. Document this for
-  forks.
+- **Hard-coded repository:** `REPO_OWNER` in `src/config.ts` decides which gallery and
+  links a build uses. Anyone forking this repo must change it or set `VITE_GALLERY_URL`,
+  or their builds keep reading this gallery.

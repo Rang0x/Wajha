@@ -63,10 +63,10 @@
   },
   "description": "Beautiful App Store and Google Play screenshots. Offline, open source.",
   "license": "MIT",
-  "homepage": "https://github.com/M-Alkassem/Wajha",
+  "homepage": "https://github.com/Rang0x/Wajha",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/M-Alkassem/Wajha.git"
+    "url": "git+https://github.com/Rang0x/Wajha.git"
   },
   "engines": {
     "node": ">=22.18"

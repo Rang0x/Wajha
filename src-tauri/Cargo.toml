@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Wajha: beautiful App Store and Google Play screenshots, offline and open source"
 authors = ["Wajha contributors"]
 license = "MIT"
-repository = "https://github.com/M-Alkassem/Wajha"
+repository = "https://github.com/Rang0x/Wajha"
 edition = "2024"
 # tauri 2.12 itself requires 1.90.
 rust-version = "1.90"

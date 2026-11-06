@@ -1,7 +1,7 @@
 /** App-wide constants. REPO_OWNER / REPO_NAME name the GitHub repository (links and the community gallery). */
 export const APP_NAME = 'Wajha';
 export const APP_NAME_AR = 'واجهة';
-export const REPO_OWNER = 'M-Alkassem';
+export const REPO_OWNER = 'Rang0x';
 export const REPO_NAME = 'Wajha';
 export const REPO_URL = `https://github.com/${REPO_OWNER}/${REPO_NAME}`;
 

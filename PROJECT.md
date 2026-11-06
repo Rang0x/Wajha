@@ -16,6 +16,14 @@ modules. This file covers what the project is and where it is going.
 | [`SECURITY.md`](SECURITY.md) | What do we defend against, and how do you report a problem? |
 | [`CHANGELOG.md`](CHANGELOG.md) | What changed in each version? |
 
+## Ownership
+
+This is an independent version maintained by [Rang0x](https://github.com/Rang0x),
+forked on 2026-11-06 from [M-Alkassem/Wajha](https://github.com/M-Alkassem/Wajha).
+The original work is MIT licensed, and its license and copyright notice must stay in
+this repo. To bring in changes from the original: `git fetch upstream`, then
+`git merge upstream/main`.
+
 ## The idea
 
 Store screenshots are what people see before they install an app, and making
@@ -63,7 +71,8 @@ The pixels are only produced at export. Almost every feature follows from this.
    ([docs/SCALING.md](docs/SCALING.md#1-old-clients-never-go-away)).
 3. **Store rules change.** The promise of "exact store sizes" lasts only while
    someone keeps `src/model/catalog.ts` current, and no process does that yet.
-4. **Few maintainers.** Nearly all commits so far come from one person.
+4. **One maintainer.** This version depends on one person, and it must also earn its
+   own audience next to the original project.
 
 No competitor or market research has been done for this brief. "Why it could
 win" is reasoning from the code and README, not validated demand.
@@ -93,10 +102,10 @@ From [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md#2-principles):
 
 | | |
 |---|---|
-| Version | `0.1.0`, tagged 2026-11-03, with 4 commits on `main` since |
-| Traction | 52 stars, 6 forks, 0 open issues, 55 release asset downloads |
-| Contributors | One main author; one outside pull request merged (#4) |
-| CI | Passing on `main` |
+| Version | `0.1.0` in the files; this fork has published no release yet |
+| Traction | None yet for this fork. The original had 52 stars, 6 forks and 55 release asset downloads at the fork date |
+| Maintainers | Rang0x |
+| CI | Passing on the original's `main` at the fork point; not yet confirmed on this fork |
 | Size | 548 tracked files |
 | Source lines, tests included | `src/ui` 37.7k, `src/engine` 13.9k, `src/model` 6.4k, `src-tauri` 4.7k |
 | Tests | 132 unit test files, 21 end-to-end specs, about 109 Rust tests |

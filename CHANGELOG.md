@@ -6,6 +6,11 @@ was added are reconstructed from commit titles.
 
 ## Unreleased
 
+### Changed
+
+- This is now an independent version under `Rang0x/Wajha`. The community gallery and
+  in-app links use this repository.
+
 ### Added
 
 - Full-size preview of template slides (#4).

@@ -1,7 +1,6 @@
 # Roadmap
 
-A proposal, not a commitment, and not yet agreed with the maintainer. The order
-is deliberate: **make shipping safe, then earn trust, then add reach.** New
+A plan for this version, not a commitment. The order is deliberate: **make shipping safe, then earn trust, then add reach.** New
 features reach few people while installing shows warnings and existing users
 cannot learn about updates.
 
@@ -37,7 +36,7 @@ Cheap work that prevents expensive mistakes.
 **Recommendation on updates:** start with a notify-only check of a static file, not
 silent auto-install. It is simple and keeps the user in control, and it needs no
 updater signing key on day one. It does add a network request, so the README must
-say so. This needs the maintainer's agreement because it touches a stated promise.
+say so, because it changes a stated promise.
 
 ## Then: reach and leverage (0.4 and on)
 

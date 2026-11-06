@@ -9,8 +9,8 @@ link to them instead.
 
 ## Decisions and why
 
-Inferred from the code and docs unless it says otherwise. Nobody has confirmed
-the reasoning with the author.
+Mostly inherited from the original project. Its reasoning is inferred from the code
+and docs, and nobody has confirmed it with the original author.
 
 | Decision | Why | Where |
 |---|---|---|
@@ -25,7 +25,8 @@ the reasoning with the author.
 | Actions pinned to commit SHAs | A moved tag cannot change what runs with write access | `.github/workflows/` |
 | npm and Cargo updates by hand | Dependabot covers only GitHub Actions; deliberate given the dependency policy | `.github/dependabot.yml` |
 | English text is the translation key | Simple; `i18n.test.ts` fails if an Arabic entry is missing | `src/i18n/` |
-| AI tool files are git-ignored | The maintainer keeps `CLAUDE.md`, `AGENTS.md` and similar out of the repo | `.gitignore` |
+| AI tool files are git-ignored | The original project keeps `CLAUDE.md`, `AGENTS.md` and similar out of the repo | `.gitignore` |
+| Run as an independent fork (2026-11-06) | Rang0x chose to own this version rather than contribute upstream | `PROJECT.md` |
 
 ## Traps
 
@@ -70,8 +71,14 @@ the reasoning with the author.
 
 ## Open questions
 
-Each needs a maintainer decision.
+Each needs a decision from Rang0x.
 
+0. **Name and app identifier: settle before the first release.** The build still uses
+   the name Wajha and the identifier `studio.wajha.app`, inherited from the original.
+   With the same identifier, this build and the original share a data folder on one
+   machine, and the operating system may treat them as the same app. Changing it after
+   release would strand users' projects unless the app migrates them. Keeping the name
+   may also confuse people about which version they have.
 1. **Updater:** add an auto-updater, a notify-only check, or neither? It conflicts
    with the README's network promise, so it should be opt-in or disclosed.
    Recommendation in [ROADMAP.md](ROADMAP.md).
@@ -89,6 +96,10 @@ Each needs a maintainer decision.
 6. **Governance:** who else can review and merge, and who holds release rights?
 
 ## Log
+
+- **2026-11-06:** Became an independent fork under `Rang0x/Wajha`. `REPO_OWNER` and
+  the package metadata now point here, so the gallery and in-app links use this repo.
+  GitHub Issues were turned on. `origin` is the fork and `upstream` is the original.
 
 - **2026-11-06:** Cloned the repo, reviewed the code, docs, CI and GitHub state, and
   added `PROJECT.md`, `MEMORY.md`, `ROADMAP.md`, `docs/SCALING.md`,
